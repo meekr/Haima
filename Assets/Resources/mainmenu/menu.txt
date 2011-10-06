@@ -1,0 +1,762 @@
+<!--
+	sub.type ================
+	1 - single page
+	2 - zoomable page
+	3 - gallary page
+	4 - gallary home page
+	5 - hotspot page
+	6 - playable
+	7 - timeline
+	8 - fadein
+	
+	img.type =================
+	1 - image
+	2 - video
+-->
+<menu>
+	<item title="首页" icon="shouye"/>
+	<item title="认识福美来" icon="renshifumeilai" assetBundle="car1-intro">
+		<sub icon="pin" type="1" alt="品牌标识及简介">
+			<component>
+				<c src="t-1" x="55" y="28" w="184" h="26"/>
+				<c src="t-2" x="308" y="200" w="390" h="98"/>
+				<c src="t-3" x="240" y="478" w="546" h="86"/>
+			</component>
+		</sub>
+		<sub icon="history" type="7" alt="品牌历史">
+			<ms time="t-2000-8" text="2000-8-1" pic="p-2000-8-1"/>
+			<ms time="t-2002-7" text="2002-7" pic="p-2002-7"/>
+			<ms time="t-2003-7" text="2003-7" pic="p-2003-7"/>
+			<ms time="t-2004-3" text="2004-3" pic="p-2004-3"/>
+			<ms time="t-2005-6" text="2005-6" pic="p-2005-6"/>
+			<ms time="t-2006-8" text="2006-8" pic="p-2006-8"/>
+			<ms time="t-2007-10" text="2007-10" pic="p-2007-10"/>
+			<ms time="t-2008-9" text="2008-9" pic="p-2008-9"/>
+			<ms time="t-2009-3" text="2009-3" pic="p-2009-3"/>
+			<ms time="t-2010-3" text="2010-3" pic="p-2010-3"/>
+		</sub>
+		<sub icon="shejilinian" type="3" alt="设计理念">
+			<img>
+				<component>
+					<c src="t-4" x="55" y="28" w="487" h="26"/>
+					<c src="t-5" x="307" y="491" w="672" h="125"/>
+					<c src="p-1" x="0" y="72" w="1024" h="393"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-6" x="55" y="28" w="474" h="26"/>
+					<c src="t-7" x="78" y="103" w="352" h="17"/>
+					<c src="t-8" x="434" y="206" w="106" h="74"/>
+					<c src="t-9" x="685" y="440" w="277" h="75"/>
+					<c src="t-10" x="76" y="461" w="148" h="74"/>
+					<c src="p-2" x="76" y="136" w="880" h="486"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-11" x="55" y="28" w="474" h="26"/>
+					<c src="t-12" x="510" y="115" w="370" h="124"/>
+					<c src="p-3" x="74" y="112" w="880" h="484"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="chanpin" type="1" alt="产品定位">
+			<component>
+				<c src="t-13" x="55" y="28" w="105" h="26"/>
+				<c src="t-14" x="104" y="546" w="832" h="65"/>
+				<c src="p-4" x="0" y="69" w="1024" h="458"/>
+			</component>
+		</sub>
+		<sub icon="CTCC" type="3" alt="CTCC荣誉">
+			<img type="6">
+				<component>
+					<c src="t-ctcc" x="55" y="28" w="106" h="26"/>
+					<c src="t-ctcc-q1" x="467" y="134" w="476" h="209"/>
+					<c src="t-ctcc-q2" x="99" y="395" w="476" h="185"/>
+					<c src="p-ctcc-1" x="88" y="131" w="307" h="230"/>
+					<c src="p-ctcc-2" x="639" y="379" w="307" h="230"/>
+				</component>
+				<area x="61" y="111" width="365" height="295" videoSrc="CTCC视频.mp4"/>
+				<area x="598" y="249" width="365" height="295" videoSrc="成片05-06高清.mp4"/>
+			</img>
+			<img type="2">
+				<component>
+					<c src="t-ctcc-sh" x="55" y="28" w="201" h="26"/>
+				</component>
+				<img src="_MG_9691" x="80" y="115" width="215" height="143"/>
+				<img src="IMG_9616-m1024x768" x="304" y="115" width="215" height="143"/>
+				<img src="IMG_9727-m1024X768" x="528" y="115" width="215" height="143"/>
+				<img src="IMG_9780-m1024X768" x="752" y="115" width="215" height="143"/>
+			</img>
+			<img type="2">
+				<component>
+					<c src="t-ctcc-cd" x="55" y="28" w="199" h="26"/>
+				</component>
+				<img src="_DSC00781024x768" x="80" y="115" width="215" height="143"/>
+				<img src="_DSC00971024x768" x="304" y="115" width="215" height="143"/>
+				<img src="_DSC01221024x768" x="528" y="115" width="215" height="143"/>
+				<img src="_DSC01561024x768" x="752" y="115" width="215" height="143"/>
+				<img src="_DSC01731024x768" x="80" y="265" width="215" height="143"/>
+				<img src="_DSC02371024x768" x="304" y="115" width="215" height="143"/>
+				<img src="_DSC02891024x768" x="528" y="115" width="215" height="143"/>
+				<img src="_DSC03281024x768" x="752" y="115" width="215" height="143"/>
+			</img>
+			<img type="2">
+				<component>
+					<c src="t-ctcc-zh" x="55" y="28" w="201" h="26"/>
+				</component>
+				<img src="IMG_38791024x768" x="80" y="115" width="215" height="143"/>
+				<img src="IMG_39511024x768" x="304" y="115" width="215" height="143"/>
+				<img src="IMG_40141024x768" x="528" y="115" width="215" height="143"/>
+				<img src="IMG_40661024x768" x="752" y="115" width="215" height="143"/>
+				<img src="IMG_79891024x768" x="80" y="265" width="215" height="143"/>
+			</img>
+		</sub>
+	</item>
+	<item title="用户描述" icon="yonghumiaoshu" type="3" assetBundle="car1-customer">
+		<img type="2">
+			<component>
+				<c src="t-1" x="55" y="28" w="159" h="26"/>
+				<c src="t-2" x="116" y="183" w="391" h="111"/>
+				<c src="t-3" x="509" y="450" w="459" h="107"/>
+			</component>
+			<img src="3997009_115707006137_2_1024x768" x="569" y="112" width="343" height="227"/>
+			<img src="d3uggjatqh4z1024x768" x="110" y="365" width="343" height="227"/>
+		</img>
+		<img>
+			<component>
+				<c src="t-1" x="55" y="28" w="159" h="26"/>
+				<c src="t-4" x="228" y="517" w="719" h="99"/>
+				<c src="p-1" x="0" y="72" w="1024" h="426"/>
+			</component>
+		</img>
+	</item>
+	<item title="产品展示" icon="chanpinzhanshi" iOSNativeCode="Config"/>
+	<item title="产品卖点" icon="chanpinmaidian" assetBundle="car1-maidian">
+		<sub icon="peizhi" type="3" alt="全配置宜居空间">
+			<img type="5">
+				<component>
+					<c src="t-1" x="55" y="28" w="331" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-1" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-1" x="36" y="532" w="939" h="51"/>
+				</component>
+				<spot src="t_1" x="164" y="148"/>
+				<spot src="t_2" x="380" y="441"/>
+				<spot src="t_3" x="810" y="266"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-1" x="55" y="28" w="331" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-2" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-2" x="36" y="532" w="949" h="51"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-2" x="55" y="28" w="329" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-3" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-3" x="36" y="532" w="949" h="59"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-2" x="55" y="28" w="329" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-4" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-4" x="36" y="532" w="937" h="58"/>
+				</component>
+			</img>
+			<img type="5">
+				<component>
+					<c src="t-2" x="55" y="28" w="329" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-5" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-5" x="36" y="532" w="937" h="51"/>
+				</component>
+				<spot src="t_5" x="460" y="89"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-2" x="55" y="28" w="329" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-6" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-6" x="36" y="532" w="927" h="51"/>
+				</component>
+			</img>
+			<img type="5">
+				<component>
+					<c src="t-3" x="55" y="28" w="330" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-7" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-7" x="36" y="532" w="649" h="51"/>
+				</component>
+				<spot src="t_6" x="132" y="316"/>
+				<spot src="t_7" x="267" y="352"/>
+				<spot src="t_8" x="459" y="89"/>
+				<spot src="t_9" x="499" y="341"/>
+				<spot src="t_10" x="540" y="329"/>
+				<spot src="t_11" x="513" y="390"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-3" x="55" y="28" w="330" h="25"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-8" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-8" x="36" y="532" w="937" h="51"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="jiacheng" type="3" alt="全驾乘灵动操控">
+			<img type="5">
+				<component>
+					<c src="t-4" x="55" y="28" w="331" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-9" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-9" x="36" y="532" w="698" h="51"/>
+				</component>
+				<spot src="t_12" x="548" y="311"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-4" x="55" y="28" w="331" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-10" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-10" x="36" y="532" w="761" h="51"/>
+				</component>
+			</img>
+			<img type="2">
+				<component>
+					<c src="t-4" x="55" y="28" w="331" h="26"/>
+					<c src="t-cvt" x="468" y="134" w="471" h="113"/>
+					<c src="p-cvt" x="88" y="132" w="307" h="230"/>
+				</component>
+				<video x="87" y="132" width="307" height="230" src="wujibiansu.mp4"/>
+				<img src="变速器" x="638" y="378" width="307" height="230"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-4" x="55" y="28" w="331" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-12" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-12" x="36" y="532" w="761" h="51"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="safety" type="3" alt="全方向五心安全">
+			<img type="5">
+				<component>
+					<c src="t-5" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-13" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-13" x="36" y="532" w="523" h="51"/>
+				</component>
+				<spot src="t_13" x="452" y="397"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-5" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-14" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-14" x="36" y="532" w="509" h="51"/>
+				</component>
+			</img>
+			<img type="6">
+				<component>
+					<c src="t-5" x="55" y="28" w="383" h="26"/>
+					<c src="t-b-1" x="467" y="132" w="476" h="186"/>
+					<c src="t-b-2" x="99" y="386" w="475" h="185"/>
+					<c src="p-b-1" x="87" y="132" w="307" h="230"/>
+					<c src="p-b-2" x="640" y="382" w="307" h="230"/>
+				</component>
+				<area x="87" y="132" width="307" height="230" videoSrc="ABS.mp4"/>
+				<area x="640" y="382" width="307" height="230" videoSrc="刹车.mp4"/>
+			</img>
+			<img type="2">
+				<component>
+					<c src="t-5" x="55" y="28" w="383" h="26"/>
+					<c src="t-q-16-1" x="466" y="131" w="498" h="81"/>
+					<c src="t-q-16-1" x="66" y="479" w="498" h="81"/>
+				</component>
+				<img src="前大灯1024X768" x="60" y="101" width="367" height="293"/>
+				<img src="009侧整体内铈空间-儿童坐椅1024X768" x="596" y="277" width="367" height="293"/>
+			</img>
+			<img type="8">
+				<component>
+					<c src="t-6" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-17-0" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-17" x="36" y="532" w="944" h="51"/>
+				</component>
+				<img src="p-17-1" x="386" y="99" w="348" h="282"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-6" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-18" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-18" x="36" y="532" w="593" h="51"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-7" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-19" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-19" x="36" y="532" w="873" h="52"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-7" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-20" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-20" x="36" y="532" w="936" h="60"/>
+				</component>
+			</img>
+			<img type="6">
+				<component>
+					<c src="t-7" x="55" y="28" w="383" h="26"/>
+					<c src="t-b-3" x="467" y="132" w="471" h="88"/>
+					<c src="t-b-4" x="99" y="426" w="476" h="110"/>
+					<c src="p-b-3" x="87" y="132" w="307" h="230"/>
+					<c src="p-b-4" x="640" y="382" w="307" h="230"/>
+				</component>
+				<area x="87" y="132" width="307" height="230" videoSrc="倒车.mp4"/>
+			</img>
+			<img>
+				<component>
+					<c src="t-8" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-22" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-22" x="36" y="532" w="937" h="51"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-8" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-23" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-23" x="36" y="532" w="887" h="51"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-9" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-24" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-24" x="36" y="532" w="944" h="82"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="t-10" x="55" y="28" w="383" h="26"/>
+					<c src="p-0" x="0" y="505" w="1024" h="183"/>
+					<c src="p-25" x="0" y="71" w="1024" h="434"/>
+					<c src="t-q-25" x="36" y="532" w="937" h="51"/>
+				</component>
+			</img>
+		</sub>
+	</item>
+	<item id="pk" title="同级车对比" icon="tongjicheduibi" assetBundle="car1-compare">
+		<sub icon="pk-sunny" type="3" alt="新阳光">
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-1" x="55" y="28" w="621" h="26"/>
+					<c src="F_vs_newsunshine-p-1" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-2" x="62" y="440" w="903" h="144"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-3" x="55" y="28" w="582" h="26"/>
+					<c src="F_vs_newsunshine-p-2" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-4" x="62" y="440" w="904" h="168"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-5" x="55" y="28" w="765" h="26"/>
+					<c src="F_vs_newsunshine-p-3" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-6" x="62" y="440" w="904" h="145"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-7" x="55" y="28" w="687" h="26"/>
+					<c src="F_vs_newsunshine-p-4" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-8" x="62" y="440" w="903" h="159"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-9" x="55" y="28" w="661" h="26"/>
+					<c src="F_vs_newsunshine-p-5" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-10" x="62" y="440" w="904" h="144"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-11" x="55" y="28" w="687" h="26"/>
+					<c src="F_vs_newsunshine-p-6" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-12" x="62" y="440" w="904" h="145"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-13" x="55" y="28" w="661" h="26"/>
+					<c src="F_vs_newsunshine-p-7" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_newsunshine-t-14" x="62" y="440" w="833" h="49"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_newsunshine-t-15" x="55" y="28" w="505" h="26"/>
+					<c src="F_vs_newsunshine-p-8" x="86" y="111" w="855" h="483"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="pk-yuedong" type="3" alt="悦动">
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-1" x="55" y="28" w="305" h="26"/>
+					<c src="F_vs_yuedong-p-1" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-2" x="62" y="440" w="903" h="120"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-3" x="55" y="28" w="331" h="26"/>
+					<c src="F_vs_yuedong-p-2" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-4" x="62" y="440" w="903" h="97"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-5" x="55" y="28" w="305" h="26"/>
+					<c src="F_vs_yuedong-p-3" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-6" x="62" y="440" w="904" h="121"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-7" x="55" y="28" w="279" h="26"/>
+					<c src="F_vs_yuedong-p-4" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-8" x="62" y="440" w="904" h="145"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-9" x="55" y="28" w="332" h="26"/>
+					<c src="F_vs_yuedong-p-5" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-10" x="62" y="440" w="903" h="103"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-11" x="55" y="28" w="304" h="26"/>
+					<c src="F_vs_yuedong-p-6" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-12" x="62" y="440" w="903" h="72"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-13" x="55" y="28" w="278" h="26"/>
+					<c src="F_vs_yuedong-p-7" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-14" x="62" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-15" x="55" y="28" w="332" h="26"/>
+					<c src="F_vs_yuedong-p-8" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_yuedong-t-16" x="62" y="440" w="903" h="145"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_yuedong-t-17" x="55" y="28" w="357" h="26"/>
+					<c src="F_vs_yuedong-p-9" x="86" y="111" w="855" h="424"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="pk-b50" type="3" alt="奔腾B50">
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-1" x="55" y="28" w="320" h="26"/>
+					<c src="F_vs_bentengB50-p-1" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-2" x="53" y="440" w="403" h="168"/>
+					<c src="F_vs_bentengB50-t-3" x="549" y="440" w="411" h="193"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-4" x="55" y="28" w="347" h="26"/>
+					<c src="F_vs_bentengB50-p-2" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-5" x="53" y="440" w="904" h="96"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-6" x="55" y="28" w="373" h="26"/>
+					<c src="F_vs_bentengB50-p-3" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-7" x="58" y="440" w="805" h="49"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-8" x="55" y="28" w="373" h="26"/>
+					<c src="F_vs_bentengB50-p-4" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-9" x="61" y="440" w="903" h="72"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-10" x="55" y="28" w="372" h="26"/>
+					<c src="F_vs_bentengB50-p-5" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-11" x="61" y="440" w="903" h="120"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-12" x="55" y="28" w="451" h="26"/>
+					<c src="F_vs_bentengB50-p-6" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-13" x="61" y="440" w="903" h="96"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-14" x="55" y="28" w="320" h="26"/>
+					<c src="F_vs_bentengB50-p-7" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_bentengB50-t-15" x="61" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_bentengB50-t-16" x="55" y="28" w="399" h="26"/>
+					<c src="F_vs_bentengB50-p-8" x="86" y="111" w="855" h="373"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="pk-g3" type="3" alt="比亚迪G3">
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-1" x="55" y="28" w="334" h="26"/>
+					<c src="F_vs_biyadiG3-p-1" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-2" x="62" y="440" w="835" h="49"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-3" x="55" y="28" w="386" h="26"/>
+					<c src="F_vs_biyadiG3-p-2" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-4" x="62" y="440" w="904" h="169"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-5" x="55" y="28" w="333" h="26"/>
+					<c src="F_vs_biyadiG3-p-3" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-6" x="62" y="440" w="904" h="193"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-7" x="55" y="28" w="360" h="26"/>
+					<c src="F_vs_biyadiG3-p-4" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-8" x="62" y="440" w="903" h="97"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-9" x="55" y="28" w="334" h="26"/>
+					<c src="F_vs_biyadiG3-p-5" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-10" x="62" y="440" w="904" h="121"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-11" x="55" y="28" w="386" h="26"/>
+					<c src="F_vs_biyadiG3-p-6" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-12" x="62" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-13" x="55" y="28" w="386" h="26"/>
+					<c src="F_vs_biyadiG3-p-7" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-14" x="62" y="440" w="897" h="96"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-15" x="55" y="28" w="385" h="26"/>
+					<c src="F_vs_biyadiG3-p-8" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-16" x="62" y="440" w="903" h="120"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-17" x="55" y="28" w="333" h="26"/>
+					<c src="F_vs_biyadiG3-p-9" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-18" x="62" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-19" x="55" y="28" w="464" h="26"/>
+					<c src="F_vs_biyadiG3-p-10" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_biyadiG3-t-20" x="62" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_biyadiG3-t-21" x="55" y="28" w="412" h="26"/>
+					<c src="F_vs_biyadiG3-p-11" x="86" y="111" w="855" h="487"/>
+				</component>
+			</img>
+		</sub>
+		<sub icon="pk-ec718" type="3" alt="帝豪EC718">
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-1" x="55" y="28" w="400" h="26"/>
+					<c src="F_vs_dihaoEC718-p-1" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-2" x="62" y="440" w="904" h="145"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-3" x="55" y="28" w="374" h="26"/>
+					<c src="F_vs_dihaoEC718-p-2" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-4" x="62" y="440" w="903" h="97"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-5" x="55" y="28" w="400" h="26"/>
+					<c src="F_vs_dihaoEC718-p-3" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-6" x="62" y="440" w="903" h="73"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-7" x="55" y="28" w="400" h="26"/>
+					<c src="F_vs_dihaoEC718-p-4" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-8" x="62" y="440" w="903" h="97"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-9" x="55" y="28" w="399" h="26"/>
+					<c src="F_vs_dihaoEC718-p-5" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-10" x="62" y="440" w="890" h="120"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-11" x="55" y="28" w="530" h="26"/>
+					<c src="F_vs_dihaoEC718-p-6" x="0" y="72" w="1024" h="344"/>
+					<c src="p-0" x="492" y="41" w="117" h="424"/>
+					<c src="F_vs_dihaoEC718-t-12" x="62" y="440" w="903" h="96"/>
+				</component>
+			</img>
+			<img>
+				<component>
+					<c src="F_vs_dihaoEC718-t-13" x="55" y="28" w="412" h="26"/>
+					<c src="F_vs_dihaoEC718-p-7" x="86" y="111" w="855" h="258"/>
+				</component>
+			</img>
+		</sub>
+	</item>
+	<item title="促销信息" icon="cuxiaoxinxi">
+	</item>
+	<item title="保养费用" icon="baoyangfeiyong" type="3" assetBundle="car1-baoyang">
+		<img>
+			<component>
+				<c src="t-1" x="55" y="28" w="103" h="26"/>
+				<c src="p-1" x="86" y="113" w="855" h="321"/>
+			</component>
+		</img>
+		<img>
+			<component>
+				<c src="t-1" x="55" y="28" w="103" h="26"/>
+				<c src="p-2" x="86" y="113" w="855" h="321"/>
+			</component>
+		</img>
+		<img>
+			<component>
+				<c src="t-1" x="55" y="28" w="103" h="26"/>
+				<c src="p-3" x="86" y="113" w="854" h="403"/>
+			</component>
+		</img>
+	</item>
+	<item title="车价计算器" icon="chejiajisuanqi" iOSNativeCode="Calculator">
+	</item>
+	<item title="自由选配" icon="ziyouxuanpei" type="3" assetBundle="car1-config">
+		<img src="整车1" type="5">
+			<spot src="下车窗亮饰条 (福美来三代)FA03-V2-011 N1" x="223" y="176"/>
+			<spot src="五斜幅铝合金轮毂（福美来三代）FA03-V3-001 N2" x="363" y="442"/>
+			<spot src="双五幅铝合金轮毂（福美来三代）FA03-V3-001 N1" x="175" y="292"/>
+			<spot src="无骨雨刷（福美来三代）FA03-V2-003 N1 N2" x="473" y="226"/>
+			<spot src="福美来三代整车膜（钻石绿）FA03-V1-001 N101" x="572" y="290"/>
+			<spot src="轮眉 (福美来三代)FA03-V2-006 N1" x="355" y="338"/>
+			<spot src="运动款雨眉（福美来三代）FA03-V2-002 N1" x="299" y="124"/>
+			<spot src="门拉手罩 (福美来三代)FA03-V2-007 N1" x="243" y="236"/>
+			<spot src="雾灯罩 (福美来三代)FA03-V2-005 N1" x="523" y="489"/>
+		</img>
+		<img src="整车2" type="5">
+			<spot src="倒车摄像头（福美来三代）FA03-V1-010 W2" x="832" y="312"/>
+			<spot src="发动机底护板（福美来三代）FA03-V1-003 N1" x="241" y="394"/>
+			<spot src="尾箱垫（福美来三代）FA03-V2-012 N1" x="742" y="276"/>
+			<spot src="油箱盖贴(福美来三代)FA03-V2-009 N1" x="552" y="352"/>
+			<spot src="行李箱饰条 (福美来三代)FA03-V2-008 N1" x="786" y="324"/>
+		</img>
+		<img src="内饰1" type="5">
+			<spot src="安全脚垫（福美来三代米色 灰色）FA03-V2-001 N101 N102" x="792" y="635"/>
+			<spot src="成型地胶（福美来三代-灰色）FA03-V2-004 N2" x="390" y="519"/>
+			<spot src="立体安全脚垫（福美来三代）FA03-V2-013 N1" x="707" y="606"/>
+			<spot src="车载导航多媒体系统（福美来三代）FA03-V1-010 W1" x="552" y="293"/>
+			<spot src="防盗报警系统(福美来三代)FA03-V1-002 N1" x="305" y="303"/>
+		</img>
+	</item>
+</menu>

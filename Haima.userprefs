@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/MenuElement.cs">
+    <Files>
+      <File FileName="Assets/gui/MainScript.cs" Line="125" Column="2" />
+      <File FileName="Assets/gui/page/InteractImagePage.cs" Line="214" Column="25" />
+      <File FileName="Assets/gui/menu/SubMenu.cs" Line="38" Column="2" />
+      <File FileName="Assets/Plugins/MenuElement.cs" Line="46" Column="45" />
+      <File FileName="Assets/Plugins/MenuGenerator.cs" Line="22" Column="3" />
+      <File FileName="Assets/gui/menu/MainMenu.cs" Line="31" Column="67" />
+      <File FileName="Assets/SceneScript.cs" Line="97" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

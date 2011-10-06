@@ -1,0 +1,86 @@
+body {
+	background:url(pbg.png) no-repeat;
+	color: black;
+	font-family:'arial',serif;
+	font-size:14px;
+	margin:0;
+}
+div#container{
+	margin:20px 58px;
+}
+
+/********
+-- calculator --
+*********/
+.calc select, .calc input{
+	font-family:'arial',serif;
+	font-size:14px;
+	width:200px;
+}
+.calc input{width:190px;}
+
+h1#calc{
+	background:url(title.png) no-repeat left center;
+	height:68px;
+	margin:0 0 0 58px;
+	width:185px;
+}
+.calc td{
+	padding:3px 0px;
+}
+
+#summary{
+	border:3px outset #6B73AC;
+	color:#6b73ac;
+	font-size:15px;
+	left:550px;
+	line-height:2em;
+	padding:1em;
+	position:absolute;
+	top:150px;
+}
+#total{
+	color:#f00;
+	font-size:1.3em;
+}
+
+/********
+-- config --
+*********/
+body.config{
+	background-color:#dedede;
+}
+h1#config{
+	height:68px;
+	margin:0 0 0 58px;
+	width:185px;
+}
+.config table{
+	background-color:#000;
+	border:2px solid #000;
+	/*border-collapse:collapse;*/
+	table-layout:fixed;
+}
+.config td{
+	background-color:#eeefef;
+	font-size:12px;
+	padding:4px 8px;
+	text-align:center;
+}
+.config td.text-left{text-align:left;}
+.config td.text-right{text-align:right;}
+.bold{
+	font-weight:bold;
+}
+.config td.brown{
+	background-color:#ebcc88;
+}
+.config td.light-yellow{
+	background-color:#efedde;
+}
+.config td.blue{
+	background-color:#c0d1e8;
+}
+.config td.light-blue{
+	background-color:#e4eaee;
+}

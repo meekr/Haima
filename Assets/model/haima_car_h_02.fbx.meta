@@ -1,0 +1,109 @@
+fileFormatVersion: 1
+guid: 445d9b5e82c0c401b9d06d8ca611cc83
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    polySurface86:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    polySurface128:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    pasted__HDM_01_06_steering_wheel:
+    - 100004
+    - 400004
+    - 3300004
+    - 2300004
+    polySurface300:
+    - 100006
+    - 400006
+    - 3300006
+    - 2300006
+    polySurface299:
+    - 100008
+    - 400008
+    - 3300008
+    - 2300008
+    polySurface301:
+    - 100010
+    - 400010
+    - 3300010
+    - 2300010
+    polySurface226:
+    - 100012
+    - 400012
+    - 3300012
+    - 2300012
+    polySurface73:
+    - 100014
+    - 400014
+    - 3300014
+    - 2300014
+    polySurface222:
+    - 100016
+    - 400016
+    - 3300016
+    - 2300016
+    polySurface298:
+    - 100018
+    - 400018
+    - 3300018
+    - 2300018
+    polySurface90:
+    - 100020
+    - 400020
+    - 3300020
+    - 2300020
+    //RootNode:
+    - 100022
+    - 400022
+    - 11100000
+    polySurface227:
+    - 100024
+    - 400024
+    - 3300022
+    - 2300022
+    polySurface100:
+    - 100026
+    - 400026
+    - 3300024
+    - 2300024
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: polySurface73
+    4300002: polySurface100
+    4300004: polySurface86
+    4300006: polySurface90
+    4300008: polySurface128
+    4300010: pasted__HDM_01_06_steering_wheel
+    4300012: polySurface222
+    4300014: polySurface226
+    4300016: polySurface227
+    4300018: polySurface298
+    4300020: polySurface299
+    4300022: polySurface300
+    4300024: polySurface301

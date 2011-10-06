@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="StyleSheet"  href="style.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.6.4.min.jss"></script>
+<script type="text/javascript" src="script.jss"></script>
+<script>
+	$(document).ready(function(){
+		$('input', '#toggles').change(function(){
+			var idx = parseInt($(this).attr('id').substr(4));
+			var tds7 = $('tr').filter(function(){
+							return $('td', this).length == 7;
+						}).find('td:nth-child('+(idx+1)+')');
+			var tdM = $('tr').filter(function(){
+							return $('td', this).length == 4;
+						}).find('td:nth-child(3)');
+			var tdA = $('tr').filter(function(){
+							return $('td', this).length == 4;
+						}).find('td:nth-child(4)');
+			var td2 = $('tr').filter(function(){
+							return $('td', this).length == 2;
+						}).find('td:nth-child(2)');
+			var td3 = $('tr').filter(function(){
+							return $('td', this).length == 3;
+						}).find('td:nth-child(3)');
+						
+			if (this.checked){
+				tds7.show();
+			}
+			else{
+				tds7.hide();
+			}
+			
+			// manual & auto group
+			var countM = 0;
+			for (var i=0; i<3; i++){
+				if ($('#toggles').children('input').get(i).checked)
+					countM++;
+			}
+			var countA = 0;
+			for (var i=3; i<6; i++){
+				if ($('#toggles').children('input').get(i).checked)
+					countA++;
+			}
+			
+			if (countM > 0){
+				tdM.show();
+				tdM.attr('colspan', countM);
+			}
+			else{
+				tdM.hide();
+			}
+			if (countA > 0){
+				tdA.show();
+				tdA.attr('colspan', countA);
+			}
+			else{
+				tdA.hide();
+			}
+			if (countM+countA > 0){
+				td2.show();
+				td2.attr('colspan', countM+countA);
+				
+				td3.show();
+				td3.attr('colspan', countM+countA);
+			}
+			else{
+				td2.hide();
+				td3.hide();
+			}
+		});
+	});
+</script>
+</head>
+<body class="config">
+	<h1 id="config"></h1>
+	<div id="container" class="config">
+		<div id="toggles">
+		<input type="checkbox" checked id="type1"><label for="type1">手动舒适版</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" checked id="type2"><label for="type2">手动宜居版</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" checked id="type3"><label for="type3">手动豪华型</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" checked id="type4"><label for="type4">自动宜居版</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" checked id="type5"><label for="type5">自动舒适型</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" checked id="type6"><label for="type6">自动豪华型</label>
+		</div>
+		<p></p>
+		<table cellspacing="1" cellpadding="1">
+			<tr height="0" style="display:none;">
+			<td width="56"></td>
+			<td width="79"></td>
+			<td width="68"></td>
+			<td width="68"></td>
+			<td width="67"></td>
+			<td width="68"></td>
+			<td width="68"></td>
+			<td width="68"></td>
+			</tr>
+			<tr>
+			<td colspan=2 class="text-left brown bold">
+			技术参数
+			</td>
+			<td class="light-yellow">手动舒适版</td>
+			<td class="light-yellow">手动宜居版</td>
+			<td class="light-yellow">手动豪华型</td>
+			<td class="light-yellow">自动宜居版</td>
+			<td class="light-yellow">自动舒适型</td>
+			<td class="light-yellow">自动豪华型</td>
+			</tr>
+			<tr>
+			<td colspan=2 class="text-left brown bold">指导价格（万元）</td>
+			<td class="light-yellow">7.68</td>
+			<td class="light-yellow">7.98</td>
+			<td class="light-yellow">8.58</td>
+			<td class="light-yellow">8.48</td>
+			<td class="light-yellow">8.98</td>
+			<td class="light-yellow">9.88</td>
+			</tr>
+			<tr>
+			<td class="blue bold" colspan=8>整车参数</td>
+			</tr>
+			<tr>
+			<td class="light-blue" rowspan=5>尺寸参数</td>
+			<td class="light-blue">长*宽*高(mm)</td>
+			<td colspan=6>4535×1740×1480</td>
+			</tr>
+			<tr>
+			<td class="light-blue">轴距(mm)</td>
+			<td colspan=6>2615</td>
+			</tr>
+			<tr>
+			<td class="light-blue">轮距（前/后）(mm)</td>
+			<td colspan=6>1472/1466</td>
+			</tr>
+			<tr>
+			<td class="light-blue">最小离地间隙(mm)</td>
+			<td colspan=6>160</td>
+			</tr>
+			<tr>
+			<td class="light-blue">油箱容积（L）</td>
+			<td colspan=6>55</td>
+			</tr>
+			<tr>
+			<td class="light-blue">质量参数</td>
+			<td class="light-blue">整车整备质量（kg）</td>
+			<td colspan=3>1270</td>
+			<td colspan=3>1325</td>
+			</tr>
+			<!-- XXXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>卓越性能</td>
+			</tr>
+			<tr>
+			<td class="light-blue">操控性</td>
+			<td class="light-blue">最小转弯半径(m)</td>
+			<td colspan=6>5.4</td>
+			</tr>
+			<tr>
+			<td class="light-blue" rowspan=7>发动机</td>
+			<td class="light-blue">型号</td>
+			<td colspan=6>HA-VVT-1.6</td>
+			</tr>
+			<tr>
+			<td class="light-blue">排量(ml)</td>
+			<td colspan=6>1598</td>
+			</tr>
+			<tr>
+			<td class="light-blue">压缩比</td>
+			<td colspan=6>10:1</td>
+			</tr>
+			<tr>
+			<td class="light-blue">最大输出功率(kw/r/min)</td>
+			<td colspan=6>88.2/6000</td>
+			</tr>
+			<tr>
+			<td class="light-blue">最大输出扭矩(Nm/r/min)</td>
+			<td colspan=6>158/4500</td>
+			</tr>
+			<tr>
+			<td class="light-blue">质保标准(年、万公里)</td>
+			<td colspan=6>5年10万公里</td>
+			</tr>
+			<tr>
+			<td class="light-blue">排放标准</td>
+			<td colspan=6>国四（带OBD车载诊断系统）</td>
+			</tr>
+			</tr>
+			<tr>
+			<td class="light-blue">变速器</td>
+			<td class="light-blue">类型</td>
+			<td colspan=3>5MT</td>
+			<td colspan=3>6CVT</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>轮胎规格</td>
+			<td>195/65 R15</td>
+			<td>195/65 R15</td>
+			<td>205/55 R16</td>
+			<td>195/65 R15</td>
+			<td>195/65 R15</td>
+			<td>205/55 R16</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>驱动形式</td>
+			<td colspan=6>前置前驱</td>
+			</tr>
+			<tr>
+			<td colspan=8>
+			&nbsp;
+			</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>车型配置</td>
+			<td>手动舒适版</td>
+			<td>手动宜居版</td>
+			<td>手动豪华型</td>
+			<td>自动宜居版</td>
+			<td>自动舒适型</td>
+			<td>自动豪华型</td>
+			</tr>
+			<!-- XXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>高效动力</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>直列四缸、16气门、双顶置凸轮轴、多点喷射汽油发动机</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>VVT可变气门正时系统</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>发动机装饰板</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<!-- XXXXXXXXXXXXX -->
+			<td class="blue bold" colspan=8>精准操控</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>麦弗逊式独立前悬架带横向稳定杆</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>多连杆式独立后悬架带横向稳定杆</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>速度感应式助力转向系统</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>15寸钢制轮毂（带轮毂装饰罩）</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<tr>
+			<td class="light-blue" colspan=2>十辐15寸铝合金轮毂</td>
+			<td>—</td>
+			<td>—</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>旋风式16寸铝合金轮毂</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>备胎(钢制6JJ×15轮辋+185/60 R15 轮胎)</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<!-- XXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>优雅外观</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>高穿透力前雾灯</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>伴你回家功能(大灯延迟关闭)</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>通体车色护条</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>通体色门把手</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>隔热前挡风玻璃+花边遮阳带</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>双开启模式电动车窗</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>电动调节超大外后视镜(集成转向灯)</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>外后视镜电除霜+电动折叠功能</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>VVT标牌</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<!-- XXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>温馨内饰</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>时尚灰/深邃黑内饰</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>柔软织物面料座椅</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>环保超纤面料座椅</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<td class="light-blue" colspan=2>驾驶员座椅6向手动调节</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>后排固定式头枕</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前排中央扶手、带储物箱</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<td class="light-blue" colspan=2>前排遮阳板</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>遮阳板带化妆镜照明功能</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>绒布面料门饰板</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			</tr>
+			<td class="light-blue" colspan=2>超纤面料门饰板</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>大理石纹理仪表板饰条</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>自动档位显示器</td>
+			<td>—</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<td class="light-blue" colspan=2>超纤面料变速手柄、驻车手柄</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>温馨LED踏板饰条</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>主仪表蓝色背景光（点火钥匙ON档点亮）</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<!-- XXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>舒适便利装备</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>手动控制冷暖空调</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>自动恒温空调（室内温度显示）</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>4门玻璃一键式升降+防夹手功能</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>遥控锁车玻璃自动关闭功能</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>中央遥控门锁</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>一体化遥控钥匙</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>单碟CD（带MP3/WMA功能）</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>USB2.0及AUX接口</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>AM/FM收音机</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>四辐超纤面料多功能方向盘</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>时尚动感鲨鱼鳍天线</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>4喇叭高音质扬声器</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			<td>○</td>
+			<td>○</td>
+			<td>—</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>4+2环绕立体声扬声器</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前排室内阅读灯</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>行李箱灯</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>眼镜盒</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<!-- XXXXXXXXXXXXX -->
+			<tr>
+			<td class="blue bold" colspan=8>周到安全</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>博世8.1版本ABS+EBD</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>驾驶席前安全气囊</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>隐藏式副驾驶席安全气囊</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前排双侧安全气囊</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>倒车雷达</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			<td>—</td>
+			<td>—</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>4门侧面防撞钢梁</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>可溃缩式转向管柱</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>手动防眩目内后视镜</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前排预紧式安全带</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>后排三个三点式安全带</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前/后盘式制动器</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>间歇式前雨刮器</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>LED高位制动灯</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>前排安全带未系警告灯/提示音</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>速度感应自动落锁（20km/h)</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>倒档自动静音功能</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>大灯未熄灭声音提示</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>可调式超速声音报警系统（默认120km/h)</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>后排儿童座椅固定装置</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			<tr>
+			<td class="light-blue" colspan=2>发动机ECU防盗</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			<td>○</td>
+			</tr>
+			</tr>
+			<tr>
+			<td colspan=8 class="text-right">注：1.本表中，各符号的含义：  —表示无此装备    ○表示标准装备</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+

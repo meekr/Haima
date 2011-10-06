@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="StyleSheet"  href="style.css" type="text/css" />
+<script>
+	var prices = [90000, 108000, 120800, 159999];
+	function loaded(){
+		if (document.addEventListener)
+			document.getElementById("config").addEventListener("change", changeCar, false);
+		else
+			document.getElementById("config").attachEvent("change", changeCar);
+			
+		var elms = document.getElementsByClassName("editable");
+		for (var i=0; i<elms.length; i++){
+			if (document.addEventListener)
+				elms[i].addEventListener("change", calc, false);
+			else
+				elms[i].attachEvent("change", calc);
+		}
+		
+		changeCar();
+		calc();
+	}
+	
+	function changeCar(){
+		var index = (this.selectedIndex || 0);
+		document.getElementById("price").value = prices[index];
+		// 购置附加税＝购车型/(1+17%)× 购置税率；(购置税率为10%)
+		document.getElementById("tax").value = round(prices[index]/1.17*0.1, 1);
+		// loss = 240+现款购车价格×1.2%
+		document.getElementById("loss").value = 240+round(prices[index]*0.012, 0);
+		// stolen = 新车购置价*1.0%
+		document.getElementById("stolen").value = round(prices[index]*0.01, 0);
+		// glass = 国产新车购置价*0.15%
+		document.getElementById("glass").value = round(prices[index]*0.0015, 0);
+		
+		calc();
+	}
+	
+	function calc(){
+		var elms = document.getElementsByClassName("editable");
+		var total = 0;
+		for (var i=0; i<elms.length; i++){
+			if (!isNaN(elms[i].value)){
+				total += parseFloat(elms[i].value);
+			}
+		}
+		document.getElementById("total").innerHTML = round(total, 2);
+	}
+	
+	function round(v, e) { 
+		var t=1; 
+		for(;e>0;t*=10,e--); 
+		for(;e<0;t/=10,e++); 
+		return Math.round(v*t)/t; 
+	}
+</script>
+</head>
+<body onload="loaded()">
+	<h1 id="calc"></h1>
+	<div id="container" class="calc">
+		<h3 style="font-weight:normal">购车综合计算器可以帮助您方便购车</h3>
+		<table>
+			<TR>
+				<td width="140">品牌：</td>
+				<td>海马</td>
+			</TR>
+			<TR>
+				<td>车型：</td>
+				<td>
+					<select>
+						<option>福美来三代</option>
+						<option>海马骑士</option>
+					</select>
+				</td>
+			</TR>
+			<TR>
+				<td>配置：</td>
+				<td>
+					<select id="config">
+						<option>2.4 MT 5座舒适</option>
+						<option>2.4 AT 5座技术</option>
+						<option>2.0T 5座豪华</option>
+						<option>2.0T 5座尊享</option>
+					</select>
+				</td>
+			</TR>
+			<TR>
+				<td>车价：</td>
+				<td>
+					<input id="price" class="editable" type="text" value=""/>
+				</td>
+			</TR>
+			<TR>
+				<td>车辆购置附加费：</td>
+				<td>
+					<input id="tax" class="editable" type="text" value=""/> 元
+				</td>
+			</TR>
+			<TR>
+				<td>交强险：</td>
+				<td>
+					<input class="editable" type="text" value="950"/> 元
+				</td>
+			</TR>
+			<TR>
+				<td>车辆损失险：</td>
+				<td>
+					<input id="loss" class="editable" type="text" value="3074.8"/> 元
+				</td>
+			</TR>
+			<TR>
+				<td>第三者责任险：</td>
+				<td>
+					<input class="editable" type="text" value="900"/> 元
+				</td>
+			</TR>
+			<TR>
+				<td>盗抢险：</td>
+				<td>
+					<input id="stolen" class="editable" type="text" value="1180.3"/> 元
+				</td>
+			</TR>
+			<TR>
+				<td>玻璃单独破碎险：</td>
+				<td>
+					<input id="glass" class="editable" type="text" value="620.19"/> 元
+				</td>
+			</TR>
+			<!--
+			<TR>
+				<td>其他保险费用：</td>
+				<td>
+					<input class="editable" type="text" value="2164.25"/> 元
+				</td>
+			</TR>
+			-->
+			<TR>
+				<td>代验车上牌服务费：</td>
+				<td>
+					<input class="editable" type="text" value="200"/> 元
+				</td>
+			</TR>
+			<!--<TR>
+				<td></td>
+				<td>
+					<input type="button" value="开始计算" class="button" onclick="abc()"/>
+				</td>
+			</TR>-->
+		</table>
+		<div id="summary">
+			按全款购车计算，<br/>您共需要花费 <span id="total">32332</span> 元
+		</div>
+    </div>
+</body>
+</html>
+
