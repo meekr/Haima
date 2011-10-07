@@ -21,8 +21,8 @@ public class TimeLinePage : Page {
 		_totalHeight	= (_totalItemNum - 1) * 25;
 		_menuElement	= menuElement;
 		
-		Texture2D texture	= _menuElement.GetTextureById("timelinebg");
-		setTexutre(texture, 1024f, 686f);
+		texture	= _menuElement.GetTextureById("timelinebg");
+		Debug.Log("w="+texture.width+", h="+texture.height);
 		for (int i=0; i<_totalItemNum; i++){
 			TimeLineItem item = new TimeLineItem(_menuElement);
 			item.setLabel(_menuElement.GetTextureById(milestones[i].Attributes["time"].Value));
