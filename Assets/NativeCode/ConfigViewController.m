@@ -76,10 +76,10 @@ static ConfigViewController *sharedConfigViewController = nil;
     [subView addSubview:webView];
     
     // turn off bounce
-    for (id sv in webView.subviews){
-        if ([[sv class] isSubclassOfClass: [UIScrollView class]])
-            ((UIScrollView *)sv).bounces = NO;
-    }
+//    for (id sv in webView.subviews){
+//        if ([[sv class] isSubclassOfClass: [UIScrollView class]])
+//            ((UIScrollView *)sv).bounces = NO;
+//    }
     
     [webView release];
     

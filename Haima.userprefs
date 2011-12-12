@@ -1,13 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/gui/page/TimeLinePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/CreateAssetBundles.cs">
     <Files>
-      <File FileName="Assets/gui/page/TimeLinePage.cs" Line="26" Column="39" />
-      <File FileName="Assets/gui/MainScript.cs" Line="125" Column="2" />
+      <File FileName="../../Desktop/Haima-0930/Assets/gui/page/TimeLinePage.cs" Line="104" Column="2" />
+      <File FileName="Assets/gui/menu/MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/gui/MainScript.cs" Line="49" Column="44" />
+      <File FileName="Assets/gui/page/TimeLinePage.cs" Line="22" Column="30" />
       <File FileName="Assets/gui/page/InteractImagePage.cs" Line="214" Column="25" />
       <File FileName="Assets/gui/menu/SubMenu.cs" Line="38" Column="2" />
-      <File FileName="../../Desktop/Haima-0930/Assets/gui/page/TimeLinePage.cs" Line="104" Column="2" />
       <File FileName="Assets/gui/page/TimeLineItem.cs" Line="4" Column="1" />
+      <File FileName="Assets/Plugins/MenuGenerator.cs" Line="27" Column="45" />
+      <File FileName="Assets/Plugins/MenuElement.cs" Line="79" Column="25" />
+      <File FileName="Assets/Editor/CreateAssetBundles.cs" Line="24" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
